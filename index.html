@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Emerson Dos Santos</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course home page by Emerson Dos Santos. Includes an introduction, favorite hobbies, and links to web development resources and the final project.">
+    <meta name="author" content="Emerson Dos Santos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-  <h1>Hello, World!</h1>
+
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a></li>
+                <li><a href="final-project/index.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Emerson Dos Santos</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-body">
+                <div class="about-intro">
+                    <p>
+                        My name is Emerson Dos Santos and I'm 28 years old. I am from Sao Paulo, Brazil and currently living in Las Vegas, Nevada with my wife. I love playing video games, watching movies, and spending time with family and friends. I'm currently studying web development and taking this course to enhance my skills and hopefully become a software developer.
+                    </p>
+                    <img src="images/profile1.jpeg" alt="Photo of Your Name" class="profile-photo" width="140" height="140" loading="lazy">
+                </div>
+
+                <h3>Sao Paulo City, Brazil Country</h3>
+                <hr>
+
+                <div class="about-location">
+                    <figure>
+                        <img src="images/brazil.jpeg" alt="Flag of your country" width="140" height="90" loading="lazy">
+                        <figcaption>Flag of Your Country</figcaption>
+                    </figure>
+                    <p>
+                        Brazil is the largest country in South America and the fifth-largest country in the world. Sixty percent of the Amazon rainforest lies within Brazil.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span class="footer-icon" aria-hidden="true"></span> Emerson Dos Santos <span class="footer-icon" aria-hidden="true"></span> São Paulo, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>

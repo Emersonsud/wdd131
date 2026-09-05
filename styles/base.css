@@ -1,0 +1,267 @@
+/* =========================================================
+   base.css — WDD 131 course page
+   Palette:  navy #1F4E6B | charcoal #2B2B2B | paper #FFFFFF
+             page-bg #F4F6F8 | accent #7FBF6B | line #D9DEE3
+   Type:     Fraunces (display) + Inter (body)
+   ========================================================= */
+
+:root {
+    --color-navy: #1f4e6b;
+    --color-navy-dark: #163a50;
+    --color-charcoal: #2b2b2b;
+    --color-page-bg: #f4f6f8;
+    --color-paper: #ffffff;
+    --color-ink: #22303c;
+    --color-accent: #7fbf6b;
+    --color-line: #d9dee3;
+    --color-link: #1f4e9b;
+
+    --font-display: "Fraunces", serif;
+    --font-body: "Inter", sans-serif;
+
+    --content-width: 1000px;
+    --radius: 4px;
+}
+
+/* -------------------- Reset -------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--color-line);
+    margin: 0.75rem 0 1rem;
+}
+
+/* -------------------- Base type -------------------- */
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-page-bg);
+    color: var(--color-ink);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-display);
+    color: var(--color-ink);
+    line-height: 1.15;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* -------------------- Header -------------------- */
+header {
+    background-color: var(--color-navy);
+}
+
+/* span displayed as block so it can be centered like a logo */
+#course-title {
+    display: block;
+    text-align: center;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--color-paper);
+    letter-spacing: 0.02em;
+    padding: 1.1rem 1rem;
+}
+
+/* CSS Flex navigation */
+header nav {
+    background-color: var(--color-charcoal);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+
+header nav a {
+    position: relative;
+    display: block;
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-paper);
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+header nav a:hover,
+header nav a:focus-visible {
+    color: var(--color-accent);
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* -------------------- Main -------------------- */
+/* limited width, centered horizontally; also the grid context
+   for the h1 and the two card sections that sit inside it */
+main {
+    max-width: var(--content-width);
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+main > h1 {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+}
+
+/* -------------------- Cards -------------------- */
+.card {
+    background-color: var(--color-paper);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--color-navy);
+    color: var(--color-paper);
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    margin: 0;
+}
+
+.card-body {
+    padding: 1.25rem 1.5rem;
+}
+
+.about-intro {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.about-intro p {
+    flex: 1;
+}
+
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    flex-shrink: 0;
+}
+
+.about-location {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.about-location figure {
+    margin: 0;
+    text-align: center;
+}
+
+.about-location img {
+    width: 140px;
+    height: 90px;
+    object-fit: cover;
+    border: 1px solid var(--color-line);
+}
+
+.about-location figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    max-width: 140px;
+}
+
+.about-location p {
+    flex: 1;
+}
+
+.resource-list li {
+    margin-bottom: 0.75rem;
+}
+
+.resource-list a {
+    font-weight: 500;
+}
+
+/* -------------------- Footer -------------------- */
+footer {
+    background-color: var(--color-navy);
+    color: var(--color-paper);
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.9rem;
+}
+ 
+footer p {
+    margin: 0.2rem 0;
+}
+ 
+#lastModified {
+    color: var(--color-accent);
+    font-size: 0.85rem;
+}
+/* -------------------- Responsive -------------------- */
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .about-intro,
+    .about-location {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}

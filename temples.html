@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  <meta name="description" content="Temple Picture Album for WDD 131">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu" aria-label="Toggle Menu"></button>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+    <div class="res-grid">
+      <figure>
+        <img src="images/sb.jpg" alt="Temple 1" loading="lazy">
+        <figcaption>Bern Switzerland Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/fr.jpg" alt="Temple 2" loading="lazy">
+        <figcaption>Paris France Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pr.jpg" alt="Temple 3" loading="lazy">
+        <figcaption>Provo City Center Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/sp.jpg" alt="Temple 4" loading="lazy">
+        <figcaption>São Paulo Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/re.jpg" alt="Temple 5" loading="lazy">
+        <figcaption>Recife Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/rs.jpg" alt="Temple 6" loading="lazy">
+        <figcaption>Porto Alegre Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/cur.jpg" alt="Temple 7" loading="lazy">
+        <figcaption>Curitiba Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/mb.jpg" alt="Temple 8" loading="lazy">
+        <figcaption>Manaus Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/fb.jpg" alt="Temple 9" loading="lazy">
+        <figcaption>Fortaleza Brazil Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Emerson dos Santos | BYU-Idaho</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

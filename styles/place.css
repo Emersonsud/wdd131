@@ -1,0 +1,157 @@
+:root {
+  --color-green: #009739;
+  --color-yellow: #fedd00;
+  --color-blue: #002776;
+  --color-light: #ffffff;
+  --color-text: #1a1a1a;
+  --font-heading: "Segoe UI", Verdana, sans-serif;
+  --font-body: Arial, sans-serif;
+  --box-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-light);
+}
+
+/* ---------- Header ---------- */
+.place-header {
+  background-color: var(--color-green);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.place-header h1 {
+  margin: 0;
+  color: var(--color-light);
+  font-family: var(--font-heading);
+}
+
+/* ---------- Image wrapper + boxes ---------- */
+.media-wrapper {
+  position: relative;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.data-box,
+.weather-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: var(--box-radius);
+  padding-bottom: 1rem;
+  margin: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.data-box h2,
+.weather-box h2 {
+  margin: 0 0 0.75rem 0;
+  padding: 0.6rem 1.25rem;
+  color: var(--color-light);
+  font-family: var(--font-heading);
+  background-color: var(--color-green);
+}
+
+.weather-box h2 {
+  background-color: var(--color-blue);
+}
+
+.data-box ul,
+.weather-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 1.25rem;
+}
+
+.data-box li,
+.weather-box li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.25rem 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.weather-icon-mobile {
+  display: block;
+  margin: 0 0 0.75rem 1.25rem;
+}
+
+/* ---------- Footer ---------- */
+.place-footer {
+  background-color: var(--color-blue);
+  color: var(--color-light);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.place-footer p {
+  margin: 0.25rem 0;
+}
+
+.photo-credit {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.photo-credit a {
+  color: var(--color-yellow);
+}
+
+/* ================================================
+   MEDIA QUERY - wide view (desktop/tablet)
+   ================================================ */
+@media (min-width: 700px) {
+  .media-wrapper {
+    display: block;
+  }
+
+  .data-box,
+  .weather-box {
+    position: absolute;
+    max-width: 260px;
+    margin: 0;
+  }
+
+  .data-box {
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .weather-box {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .hero-image {
+    height: 650px;
+  }
+
+  /* On wide view, hide the mobile SVG icon... */
+  .weather-icon-mobile {
+    display: none;
+  }
+
+  /* ...and use a pseudo-element (emoji) after the "Weather" heading */
+  .weather-box h2::after {
+    content: " 🌦️";
+  }
+}

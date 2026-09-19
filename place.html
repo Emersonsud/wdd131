@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brazil - WDD131</title>
+  <meta name="description" content="Informational page about Brazil - general data and weather.">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+  <header class="place-header">
+    <h1>Brazil</h1>
+  </header>
+
+  <main>
+    <div class="media-wrapper">
+
+      <!-- Responsive hero image using picture + srcset -->
+      <picture>
+        <source media="(min-width: 700px)" srcset="images/cristo-redentor.webp">
+        <img src="images/cristo-redentor.webp" alt="Christ the Redeemer statue, Rio de Janeiro, Brazil" class="hero-image" width="1200" height="700">
+      </picture>
+
+      <!-- Data box -->
+      <section class="data-box">
+        <h2>Data</h2>
+        <ul>
+          <li><span class="label">Area:</span> <span class="value">3,287,956 sq mi</span></li>
+          <li><span class="label">Population:</span> <span class="value">203,080,756</span></li>
+          <li><span class="label">Capital:</span> <span class="value">Brasília</span></li>
+          <li><span class="label">Language:</span> <span class="value">Portuguese</span></li>
+          <li><span class="label">Currency:</span> <span class="value">Real (BRL)</span></li>
+          <li><span class="label">Time Zone:</span> <span class="value">UTC-3</span></li>
+          <li><span class="label">Calling Code:</span> <span class="value">+55</span></li>
+          <li><span class="label">Internet TLD:</span> <span class="value">.br</span></li>
+        </ul>
+      </section>
+
+      <!-- Weather box -->
+      <section class="weather-box">
+        <h2>Weather</h2>
+
+        <!-- SVG icon - used only in mobile view (via CSS) -->
+        <svg class="weather-icon-mobile" viewBox="0 0 64 64" width="40" height="40" aria-hidden="true">
+          <circle cx="24" cy="24" r="12" fill="#FEDD00" />
+          <path d="M20 40h24a10 10 0 0 0 0-20 14 14 0 0 0-27-4A11 11 0 0 0 20 40z" fill="#ffffff" stroke="#002776" stroke-width="1.5" />
+        </svg>
+
+        <ul>
+          <li><span class="label">Temperature:</span> <span class="value" id="temperature">82 °F</span></li>
+          <li><span class="label">Conditions:</span> <span class="value">Sunny in Rio de Janeiro</span></li>
+          <li><span class="label">Wind:</span> <span class="value" id="windSpeed">6 mph</span></li>
+          <li><span class="label">Wind Chill:</span> <span class="value" id="windChill">--</span></li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="place-footer">
+    <p>&copy; <span id="year"></span> Emerson Dos Santos &mdash; Brazil</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+    <p class="photo-credit">Photo by <a href="https://unsplash.com/fr/@phaelnogueira">Raphael Nogueira</a> on Unsplash</p>
+  </footer>
+
+</body>
+
+</html>

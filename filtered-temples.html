@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Filtered Temple Picture Album for WDD 131 - W04 Assignment" />
+  <title>Temple Album - Filtered</title>
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      &#9776;
+    </button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="#" data-filter="home" class="nav-link active">Home</a></li>
+        <li><a href="#" data-filter="old" class="nav-link">Old</a></li>
+        <li><a href="#" data-filter="new" class="nav-link">New</a></li>
+        <li><a href="#" data-filter="large" class="nav-link">Large</a></li>
+        <li><a href="#" data-filter="small" class="nav-link">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="filter-heading">Home</h2>
+    <div id="temple-cards" class="temple-grid">
+      <!-- Temple cards are generated dynamically by filtered-temples.js -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emerson dos Santos | BYU-Idaho</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+
+</html>

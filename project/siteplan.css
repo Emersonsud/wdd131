@@ -1,0 +1,154 @@
+:root {
+  --navy: #1b263b;
+  --light: #f4f6f8;
+  --teal: #0e7c86;
+  --ink: #1c2430;
+  --white: #ffffff;
+  --font-heading: "Poppins", Arial, sans-serif;
+  --font-body: "Open Sans", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--light);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+}
+header p {
+  margin: 0.25rem 0 0;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  background: var(--white);
+  border-left: 6px solid var(--teal);
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+}
+
+h2,
+h3 {
+  font-family: var(--font-heading);
+  color: var(--navy);
+  margin-top: 0;
+}
+
+a {
+  color: var(--teal);
+}
+
+/* Color swatches */
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.swatches li {
+  width: 10rem;
+}
+.swatch {
+  display: block;
+  height: 3.5rem;
+  border: 1px solid var(--ink);
+  margin-bottom: 0.4rem;
+}
+.swatch.navy {
+  background: var(--navy);
+}
+.swatch.light {
+  background: var(--light);
+}
+.swatch.teal {
+  background: var(--teal);
+}
+.swatch.ink {
+  background: var(--ink);
+}
+
+/* Typography samples */
+.sample-heading {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0;
+}
+.sample-body {
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+/* Wireframes */
+.wireframes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.wire {
+  margin: 0;
+  border: 2px solid var(--ink);
+  padding: 0.5rem;
+  background: var(--light);
+}
+.wire.mobile {
+  width: 12rem;
+}
+.wire.desktop {
+  width: 100%;
+  max-width: 30rem;
+}
+.wire div {
+  border: 1px dashed var(--navy);
+  background: var(--white);
+  padding: 0.4rem;
+  margin-bottom: 0.4rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.wire .hero {
+  padding: 1.5rem 0.4rem;
+}
+.wire .cols {
+  display: flex;
+  gap: 0.4rem;
+  border: 0;
+  padding: 0;
+  background: none;
+}
+.wire .cols div {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--navy);
+  color: var(--white);
+}

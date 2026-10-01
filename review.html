@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Emerson">
+  <meta name="description" content="Confirmation page for the product review form with a count of completed reviews.">
+  <title>Review Submitted</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/review.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Review Submitted</h1>
+  </header>
+
+  <main class="confirmation">
+    <h2>Thank you for your review!</h2>
+    <p>You have completed <strong id="reviewCount">0</strong> <span id="reviewWord">reviews</span> so far.</p>
+    <p><a href="form.html">Write another review</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Emerson</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

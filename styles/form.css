@@ -1,0 +1,94 @@
+:root {
+  --navy: #1b263b;
+  --panel: #e3e9f0;
+  --teal: #0e7c86;
+  --ink: #1c2430;
+  --white: #ffffff;
+  --font-heading: "Poppins", Arial, sans-serif;
+  --font-body: "Open Sans", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.5;
+  max-width: 32rem;
+  margin-inline: auto;
+}
+
+header, footer {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 { margin: 0; font-family: var(--font-heading); font-size: 1.6rem; }
+footer p { margin: 0.2rem 0; }
+
+main { background: var(--panel); padding: 1.25rem; }
+
+form { display: grid; gap: 1.25rem; }
+
+.field { display: grid; gap: 0.35rem; }
+
+label, legend { font-weight: 700; }
+small { font-weight: 400; color: #2a4a8a; }
+
+select, input[type="date"], input[type="text"], textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font: inherit;
+  border: 1px solid var(--navy);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--ink);
+}
+
+fieldset { border: 0; padding: 0; margin: 0; }
+legend { padding: 0; margin-bottom: 0.4rem; }
+
+.rating-options { display: flex; justify-content: space-between; gap: 0.5rem; }
+.rating-option { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; }
+.rating-option label { font-weight: 400; font-size: 0.8rem; }
+.rating-option input { width: 1.4rem; height: 1.4rem; accent-color: var(--teal); }
+
+.check { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.4rem; }
+.check input { width: 1.3rem; height: 1.3rem; accent-color: var(--teal); }
+.check label { font-weight: 400; }
+
+input[type="submit"] {
+  padding: 0.8rem;
+  font: inherit;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--teal);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover { background: var(--navy); }
+
+:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+
+a { color: #0b5f68; }
+
+.confirmation { text-align: center; padding: 2rem 1.25rem; }
+.confirmation h2 { font-family: var(--font-heading); color: var(--navy); }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (min-width: 40rem) {
+  body { max-width: 36rem; margin-block: 2rem; }
+}

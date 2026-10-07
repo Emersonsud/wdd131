@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Emerson Portfolio</title>
+  <meta name="description" content="Emerson's personal portfolio with web development and C# projects, skills and contact information.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+  <script src="project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="header-inner">
+      <a class="site-name" href="index.html">Emerson Portfolio</a>
+      <button id="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">☰</button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div>
+        <h1>Hi, I am Emerson</h1>
+        <p>I am a student developer who builds responsive websites and object-oriented programs. This portfolio shows the projects I have built, the skills I am learning and how to reach me for a job or a freelance project.</p>
+        <p><a class="button" href="projects.html">See my projects</a> <a href="contact.html">Contact me</a></p>
+      </div>
+      <img src="images/emerson.webp" alt="Portrait of Emerson smiling, wearing a navy sweater, standing on a wooden deck with trees behind him" width="400" height="400">
+    </section>
+    <section>
+      <h2>Featured Projects</h2>
+      <div id="featured-projects" class="project-grid"></div>
+    </section>
+    <section class="panel">
+      <h2>What I Can Do</h2>
+      <p>I design clean pages with semantic HTML, style them with accessible and responsive CSS, and add behavior with JavaScript. I also write C# programs using classes and object-oriented principles.</p>
+    </section>
+  </main>
+  <footer>
+    <p id="visit-count"></p>
+    <p>&copy; <span id="year">2026</span> Emerson Portfolio</p>
+    <p><a href="references.html">References</a> | <a href="siteplan.html">Site plan</a></p>
+  </footer>
+</body>
+</html>

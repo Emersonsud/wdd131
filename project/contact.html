@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Emerson Portfolio</title>
+  <meta name="description" content="Contact Emerson about a job, a freelance project or a collaboration using the contact form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+  <script src="project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="header-inner">
+      <a class="site-name" href="index.html">Emerson Portfolio</a>
+      <button id="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">☰</button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <h1>Contact Me</h1>
+    <p>Send me a message about a job or a freelance project. All fields are required.</p>
+    <section class="panel">
+      <form id="contact-form" action="contact.html" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            <option value="" disabled selected>Choose a topic</option>
+            <option value="Job opportunity">Job opportunity</option>
+            <option value="Freelance project">Freelance project</option>
+            <option value="Collaboration">Collaboration</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit">Send message</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p id="visit-count"></p>
+    <p>&copy; <span id="year">2026</span> Emerson Portfolio</p>
+    <p><a href="references.html">References</a> | <a href="siteplan.html">Site plan</a></p>
+  </footer>
+</body>
+</html>

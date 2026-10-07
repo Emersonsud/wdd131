@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me | Emerson Portfolio</title>
+  <meta name="description" content="Learn about Emerson's background, skills and the technologies he uses to build websites and programs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project.css">
+  <script src="project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="header-inner">
+      <a class="site-name" href="index.html">Emerson Portfolio</a>
+      <button id="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">☰</button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html" aria-current="page">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <h1>About Me</h1>
+    <section class="panel">
+      <h2>My Background</h2>
+      <p>I am studying web development and programming. In my web classes I learned HTML, CSS and JavaScript, and in my programming classes I practice object-oriented design with C#.</p>
+      <p>I enjoy turning a plan into a working page and improving it step by step, checking accessibility, performance and design along the way.</p>
+    </section>
+    <section class="panel">
+      <h2>My Skills</h2>
+      <ul id="skill-list" class="skill-list"></ul>
+    </section>
+  </main>
+  <footer>
+    <p id="visit-count"></p>
+    <p>&copy; <span id="year">2026</span> Emerson Portfolio</p>
+    <p><a href="references.html">References</a> | <a href="siteplan.html">Site plan</a></p>
+  </footer>
+</body>
+</html>
